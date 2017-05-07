@@ -1,0 +1,147 @@
+
+
+*{
+
+    outline: 0;
+}
+
+.clearfix:after,.clearfix:before{
+    content:" ";
+    display:table;
+}
+.clearfix:after{
+    clear: both;
+}
+
+body{
+    background-color: #00334b;
+    color: white;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+}
+
+.task-list{
+    margin: 8px 0;
+}
+
+input,.task-item,button{
+    border-radius: 3px;
+    padding: 10px;
+}
+
+input[type=text],input[type=date],textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border:0;
+    background-color: #eee;
+    transition: background-color .2s;
+}
+
+input[type=text]:hover
+,input[type=text]:focus
+,input[type=date]:hover
+,input[type=date]:focus{
+    background-color: #fff;
+}
+
+button{
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #2371f9;
+    transition: background-color .2s;
+}
+
+button:hover{
+    background-color: #4084fb;
+}
+
+.add-task input[type=text]{
+    float: left;
+    width:85%;
+    margin-right: 1%;
+}
+
+.add-task button[type=submit]{
+    box-sizing: border-box;
+    float: right;
+    width:14%;
+}
+
+.task-item{
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+
+
+.task-item:hover{
+    background-color: #eee;
+}
+
+.task-detail-mask{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left:0;
+    background-color: rgba(6,12,5,0.34);
+    border-radius: 3px;
+}
+
+.task-detail{
+    display: none;
+    position: absolute;
+    /*bottom: 0;*/
+    top:0;
+    width:50%;
+    /*height: 100%;*/
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+.task-detail .content{
+    color: #000;
+    padding: 10px;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+.task-detail > *{
+
+    margin-bottom: 10px;
+}
+
+.fr{
+    float: right;
+}
+
+.action{
+    color: rgba(6,12,4,0.2);
+    margin-right: 5px;
+}
+
+.task-item{
+
+    margin-bottom: 3px;
+}
